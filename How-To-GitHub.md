@@ -61,6 +61,28 @@
 
 <br>
 
+## Programming Things
+
+### Navigating File Structures via the Terminal
+
+- Running `cd [file path]` allows you to switch to whatever directory was specified in the file path (as `cd` stands for "change directory")
+  - These file paths can be relative to the current directory, or absolute paths
+- Running `ls` shows you all the items in the current directory
+- `.` means current directory, and `..` means one directory up
+- If you know what you are doing, you can use a file path to get exactly where you need to go
+- If you are uncertain of the directories on your computer, you can use `cd [directory]` and `cd ..` to go up and down directory levels, then check where you are using `ls`, until you find where you need to be
+
+<br>
+
+### Using Vim
+- To quit Vim and save any changes, type `:wq`, which stands for "write and quit"
+- To quit Vim without saving changes, type `:q`
+- To move your cursor, use the arrow keys (or page up and page down) 
+- To edit text in Vim, press "I" on your keyboard to enter 'intert mode', which will allow you to edit text
+- To exit 'insert mode', press esc
+
+<br>
+
 ## GitHub Things
 
 ### Adding ssh Keys to Your Account
@@ -130,25 +152,3 @@
 5. Run this command, where `[repository page]` is the URL like thing copied from the webpage of the repository (click the green "code" dropdown, go to the ssh section, and copy that string of text).
    > git clone [repository page]
 6. You have successfully cloned a repository, and can now open your IDE and open the project directory from wherever you saved it to start working on your project.
-
-<br>
-
-## Programming Things
-
-### Navigating File Structures via the Terminal
-
-- Running `cd [file path]` allows you to switch to whatever directory was specified in the file path (as `cd` stands for "change directory")
-  - These file paths can be relative to the current directory, or absolute paths
-- Running `ls` shows you all the items in the current directory
-- `.` means current directory, and `..` means one directory up
-- If you know what you are doing, you can use a file path to get exactly where you need to go
-- If you are uncertain of the directories on your computer, you can use `cd [directory]` and `cd ..` to go up and down directory levels, then check where you are using `ls`, until you find where you need to be
-
-<br>
-
-### Using Vim
-- To quit Vim and save any changes, type `:wq`, which stands for "write and quit"
-- To quit Vim without saving changes, type `:q`
-- To move your cursor, use the arrow keys (or page up and page down) 
-- To edit text in Vim, press "I" on your keyboard to enter 'intert mode', which will allow you to edit text
-- To exit 'insert mode', press esc
