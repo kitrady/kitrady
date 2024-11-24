@@ -143,3 +143,12 @@
 - `.` means current directory, and `..` means one directory up
 - If you know what you are doing, you can use a file path to get exactly where you need to go
 - If you are uncertain of the directories on your computer, you can use `cd [directory]` and `cd ..` to go up and down directory levels, then check where you are using `ls`, until you find where you need to be
+
+<br>
+
+### Using Vim
+- To quit Vim and save any changes, type `:wq`, which stands for "write and quit"
+- To quit Vim without saving changes, type `:q`
+- To move your cursor, use the arrow keys (or page up and page down) 
+- To edit text in Vim, press "I" on your keyboard to enter 'intert mode', which will allow you to edit text
+- To exit 'insert mode', press esc
