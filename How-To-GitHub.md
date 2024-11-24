@@ -1,6 +1,6 @@
 ## GitHub Things
 
-#### Making a Repository
+### Making a Repository
 
 *A repository is a place to store code. People can add, change, remove, and use code via repositories.*
 
@@ -14,7 +14,7 @@
    - And which lisence you will use (can change later)
 3. Then click create and you will have a repository
 
-#### Cloning a Repository
+### Cloning a Repository
 
 *Cloning a repository allows you access the code on your local machine.*
 
@@ -36,7 +36,7 @@
 
 ## Programming Things
 
-### Navigating File Structures via the Terminal
+## Navigating File Structures via the Terminal
 
 - Running "cd [file path]" allows you to switch to whatever directory was specified in the file path (as "cd" stands for "change directory")
   - These file paths can be relative to the current directory, or absolute paths
