@@ -14,6 +14,7 @@
    - And which lisence you will use (can change later)
 3. Then click create and you will have a repository
 
+
 #### Cloning a Repository
 
 *Cloning a repository allows you access the code on your local machine.*
@@ -22,13 +23,18 @@
 2. Make sure you have git installed on your machine
    for Linux, run this command in the terminal
    > sudo apt install git-all
+   
    for MacOS, run any git command, such as the one below. If git is not installed, you will be prompted to install it
+
    > git --version
+   
    For Windows, just switch to another operating system
-3. Open the terminal and navigate to the directory where you want the project directory to be located
-4. Run this command, where [repository page] is the URL like thing copied from the webpage of the repository (click the green "code" dropdown, go to the ssh section, and copy that string of text).
+   
+4. Open the terminal and navigate to the directory where you want the project directory to be located
+5. Run this command, where [repository page] is the URL like thing copied from the webpage of the repository (click the green "code" dropdown, go to the ssh section, and copy that string of text).
    > git clone [repository page]
-5. You have successfully cloned a repository, and can now open your IDE and open the project directory from wherever you saved it to start working on your project.
+6. You have successfully cloned a repository, and can now open your IDE and open the project directory from wherever you saved it to start working on your project.
+
 
 ## Programming Things
 
