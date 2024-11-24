@@ -78,7 +78,7 @@
 - To quit Vim and save any changes, type `:wq`, which stands for "write and quit"
 - To quit Vim without saving changes, type `:q`
 - To move your cursor, use the arrow keys (or page up and page down) 
-- To edit text in Vim, press "I" on your keyboard to enter 'intert mode', which will allow you to edit text
+- To edit text in Vim, press "I" on your keyboard to enter 'insert mode', which will allow you to edit text
 - To exit 'insert mode', press esc
 
 <br>
