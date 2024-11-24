@@ -1,3 +1,66 @@
+## Git Commands
+
+*See https://education.github.com/git-cheat-sheet-education.pdf for list of commands*
+
+### Pushing Changes to a Repository
+- Changes to repositories are done via pull requests, where a programmer requests for their code to be added to the project, and someone else reviews and then hopefully approves the request
+- Each pull request has a 'branch' accosiated with it, and each pull request / branch should contain changes centered around some goal (not a bunch of random small goals)
+   - To create and switch to a new branch from the terminal, run this command
+  
+      > git checkout -b "branch-name"
+
+- You can add changes to your branch via a 'commit'
+   - To add (aka stage) changes to your commit, run this command (you can replace [name of modified/created file or folder] with `.` to add all changes)
+
+      > git add [name of modified/created file or folder]
+
+   - To see what files and folders you have changed / created, and whether you staged them for commit, run this command
+
+      > git status
+
+   - To commit the staged changes, run this command
+
+      > git commit -m "a short message that describes the changes in this commit"
+   
+- It is easy for small things to go wrong when committing changes
+
+   - You may see odd files or folders you don't know the purpose of (such as various config files), so double check what should add should not be committed to the repo before staging something odd
+  
+   - The `-m` in `git commit -m` specifies that you are adding a message to this commit. Do not forget the `-m` or to actually type out your message, because a message is mandatory, and if these things are ommitted you will be forced to add a message anyway via Vim. If you get trapped in Vim, either just close the terminal and start over, or read the guide on how to Vim.
+   
+- Once you have committed your changes, they need to be added to the repository
+   - Push your changes to the repository by running this command
+  
+      > git push
+
+   - If this is your first push on this branch, the repository doesn't have a coressponding branch. To create a branch in the repository and push your commit, run this command. Afterwards, there should be a pop-up on the repository asking if you want to create a pull request.
+  
+      > git push --set-upstream origin [branch name]
+ 
+   - If you want to add more changes to a pull request, you can mark the pull request as a draft on GitHub. Once you have made, staged, committed, and pushed all the changes you want to add to a pull request, remove the draft status so someone can review and approve it so the changes can be merged.
+
+   - Once a pull request is merged, GitHub will ask you if you want to delete the repository branch, since its associated pull request is closed. You can delete the local branch by running this command
+
+      > git branch -d [branch-name]
+
+<br>
+
+### Pulling Changes from Repository
+
+1. Make sure you are on the main branch (the one branch not associated with any pull requests)
+   - You can see all branches and your currently selected branch by running this command
+
+      > git branch
+
+   - If you are not on the main branch, you can switch to it by running this command
+
+      > git checkout main
+
+2. Pull down new changes from the repository by running this command
+   > git pull
+
+<br>
+
 ## GitHub Things
 
 ### Adding ssh Keys to Your Account
@@ -67,43 +130,6 @@
 5. Run this command, where `[repository page]` is the URL like thing copied from the webpage of the repository (click the green "code" dropdown, go to the ssh section, and copy that string of text).
    > git clone [repository page]
 6. You have successfully cloned a repository, and can now open your IDE and open the project directory from wherever you saved it to start working on your project.
-
-<br>
-
-### Pushing Changes to a Repository
-- Changes to repositories are done via pull requests, where a programmer requests for their code to be added to the project, and someone else reviews and then hopefully approves the request
-- Each pull request has a 'branch' accosiated with it, and each pull request / branch should contain changes centered around some goal (not a bunch of random small goals)
-   - To create and switch to a new branch from the terminal, run this command
-  
-      > git checkout -b "branch-name"
-
-- You can add changes to your branch via a 'commit'
-   - To add (aka stage) changes to your commit, run this command (you can replace [name of modified/created file or folder] with `.` to add all changes)
-
-      > git add [name of modified/created file or folder]
-
-   - To see what files and folders you have changed / created, and whether you staged them for commit, run this command
-
-      > git status
-
-   - To commit the staged changes, run this command
-
-      > git commit -m "a short message that describes the changes in this commit"
-   
-- It is easy for small things to go wrong when committing changes
-
-   - You may see odd files or folders you don't know the purpose of (such as various config files), so double check what should add should not be committed to the repo before staging something odd
-  
-   - The `-m` in `git commit -m` specifies that you are adding a message to this commit. Do not forget the `-m` or to actually type out your message, because a message is mandatory, and if these things are ommitted you will be forced to add a message anyway via Vim. If you get trapped in Vim, either just close the terminal and start over, or read the guide on how to Vim.
-   
-- Once you have committed your changes, they need to be added to the repository
-   - Push your changes to the repository by running this command
-  
-      > git push
-
-   - If this is your first push on this branch, the repository doesn't have a coressponding branch. To create a branch in the repository and push your commit, run this command
-  
-      > git push --set-upstream origin [branch name]
 
 <br>
 
