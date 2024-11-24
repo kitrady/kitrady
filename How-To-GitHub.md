@@ -4,7 +4,7 @@
 
 ### Pushing Changes to a Repository
 - Changes to repositories are done via pull requests, where a programmer requests for their code to be added to the project, and someone else reviews and then hopefully approves the request
-- Each pull request has a 'branch' accosiated with it, and each pull request / branch should contain changes centered around some goal (not a bunch of random small goals)
+- Each pull request has a 'branch' associated with it, and each pull request / branch should contain changes centered around some goal (not a bunch of random small goals)
    - To create and switch to a new branch from the terminal, run this command
   
       > git checkout -b "branch-name"
