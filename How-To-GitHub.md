@@ -1,5 +1,8 @@
 ## GitHub Things
 
+### Adding ssh Keys to Your Account
+need to write this section
+
 ### Making a Repository
 
 *A repository is a place to store code. People can add, change, remove, and use code via repositories.*
@@ -36,7 +39,7 @@
 
 ## Programming Things
 
-## Navigating File Structures via the Terminal
+### Navigating File Structures via the Terminal
 
 - Running "cd [file path]" allows you to switch to whatever directory was specified in the file path (as "cd" stands for "change directory")
   - These file paths can be relative to the current directory, or absolute paths
