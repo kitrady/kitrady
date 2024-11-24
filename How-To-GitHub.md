@@ -1,7 +1,21 @@
 ## GitHub Things
 
 ### Adding ssh Keys to Your Account
-need to write this section
+
+*Add ssh keys to allow you to clone repositories to your local device.*
+
+1. Open the terminal and run this command
+   > ssh-keygen -t ed25519 -C "your_email@example.com"
+2. It will then prompt you to choose a save location. The default location is fine, so just hit enter.
+3. It will then prompt you to type and retype a passphrase. This is in case someone gains access to your computer, they don't have access to your ssh keys. Having no passphrase is fine, so just hit enter.
+4. Start the "ssh key agent" by running this command
+   > eval "$(ssh-agent -s)"
+5. Add your private ssh key to the key agent by running this command (note that if you choose a different name for your key, use that instead of "id_ed25519")
+   > ssh-add ~/.ssh/id_ed25519
+6. Then you can add the public key to your GitHub account
+7. Do this by cat-ing the public key file with this command and copying the whole output
+   > cat ~/.ssh/id_ed25519.pub
+8. Then go to the ssk key section of the setting in your Github account, click the button to enter a new ssh key, then add the public key and name it based on your local device
 
 ### Making a Repository
 
