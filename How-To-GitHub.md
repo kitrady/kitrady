@@ -83,6 +83,14 @@
 
 <br>
 
+### Running Java Program From Terminal With Gradle
+- Navigate to the uppermost directory of the project in the terminal and run `./gradlew build` to build the project
+- This will generate a .jar file that contains class files (the compiled .java files) and a manifest that has instructions for what to do if the .jar file is run with Java (in stitch its in stitch/app/build/libs)
+- To run the program, copy the .jar file and send it to the machine you want to run the program on
+- Install Java on that machine (if it isn't installed already), then run `java -jar FileName.jar` to run the program
+
+<br>
+
 ## GitHub Things
 
 ### Adding ssh Keys to Your Account
